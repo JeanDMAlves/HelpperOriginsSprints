@@ -1,7 +1,7 @@
 // Letra A
 let letra_A = document.getElementById('formulario_A_saida');
 let frase_A = document.getElementById('frase_A');
-letra_A.value = qtd_vogais(frase_A).toString();
+letra_A.value = qtd_vogais(frase_A.innerHTML.toString()).toString();
 //letra B
 let letraB = document.getElementById('botao_vogais');
 letraB.addEventListener("click", function () {

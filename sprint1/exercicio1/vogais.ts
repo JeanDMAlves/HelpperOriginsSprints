@@ -1,4 +1,4 @@
-const verifica_vogais = (letra: string) => {
+const verifica_vogais = (letra: string):boolean => {
 
     // Lista com todas as vogais incluindo acentos 
     let vogais: Array<string> = ['a','e','i','o','u', "á", "ã", "à", "â", "é", "ê", "è", "í", "ì", "î", "ó", "ò", "õ", "ô", "ú", "û", "ù"]
@@ -8,7 +8,7 @@ const verifica_vogais = (letra: string) => {
 
 }
 
-const qtd_vogais = (palavra) => {
+const qtd_vogais = (palavra:string):number => {
 
     // Transforma a palavra em uma lista com letras minúsculas 
     let lista_letras = palavra.toString().toLowerCase().split('')

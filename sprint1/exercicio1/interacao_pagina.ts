@@ -2,8 +2,8 @@
 
 // Letra A
 let letra_A: HTMLInputElement = document.getElementById('formulario_A_saida') as HTMLInputElement
-let frase_A = document.getElementById('frase_A') 
-letra_A.value = qtd_vogais(frase_A).toString()
+let frase_A: HTMLInputElement = document.getElementById('frase_A') as HTMLInputElement
+letra_A.value = qtd_vogais(frase_A.innerHTML.toString()).toString()
 
 //letra B
 let letraB = document.getElementById('botao_vogais')
