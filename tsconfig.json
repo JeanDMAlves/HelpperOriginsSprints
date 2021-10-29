@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "outDir": "sprint1/exercicio3/js",
+        "outDir": "sprint1/exercicio4/js",
         "sourceMap": true,
         "lib": ["ES2016", "DOM"]
     }

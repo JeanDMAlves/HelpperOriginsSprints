@@ -1,0 +1,26 @@
+.form-dados{
+    margin: 1rem;
+    width: 50%;
+    font-size: 1.2rem
+}
+
+.dados-editar-entrada{
+    width: 50%;
+}
+
+#titulo-form{
+    display: inline;
+}
+
+.formulario-edicao, .formulario-exclusao{
+    margin: 2rem;
+}
+
+.edicao-interruptor{
+    height: 1.4rem;
+    margin-left: 1rem;
+}
+
+.esconde-formulario{
+    display: none;
+}
