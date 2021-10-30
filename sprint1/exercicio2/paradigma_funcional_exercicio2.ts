@@ -12,14 +12,19 @@ interface Person{
     bio?:string;
 }
 
+// const verifica_existencia_item = (array: Array<Person>, id:number) => {
+//     let item = array.filter(objeto => objeto['id'] == id)
+//     if(item.length == 0){
+//         return false
+//     }
+//     else{
+//         return true
+//     } 
+// }
+
 const verifica_existencia_item = (array: Array<Person>, id:number) => {
     let item = array.filter(objeto => objeto['id'] == id)
-    if(item.length == 0){
-        return false
-    }
-    else{
-        return true
-    } 
+    return item.length !== 0 
 }
 
 const item_por_id = (array: Array<Person>, id:number):Person => {

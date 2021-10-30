@@ -5,14 +5,18 @@ let lista = [
     { "id": 4, "name": "Nicolau Copérnico", "bio": "Nicolau Copérnico foi um astrônomo e matemático polonês que desenvolveu a teoria heliocêntrica do Sistema Solar." },
     { "id": 5 }
 ];
+// const verifica_existencia_item = (array: Array<Person>, id:number) => {
+//     let item = array.filter(objeto => objeto['id'] == id)
+//     if(item.length == 0){
+//         return false
+//     }
+//     else{
+//         return true
+//     } 
+// }
 const verifica_existencia_item = (array, id) => {
     let item = array.filter(objeto => objeto['id'] == id);
-    if (item.length == 0) {
-        return false;
-    }
-    else {
-        return true;
-    }
+    return item.length !== 0;
 };
 const item_por_id = (array, id) => {
     // Compara o parâmetro ID com todos os itens da lista, se não achar retorna Undefined   
