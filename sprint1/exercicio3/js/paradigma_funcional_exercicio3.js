@@ -10,5 +10,4 @@ const informacoes_lista_numerica_funcional = (lista) => {
     return [menor_valor, valor_medio, maior_valor];
 };
 let numeros2 = [0, 2, 3, 5, 1, 4, 8, 6, 7, 10, 9];
-console.log(informacoes_lista_numerica_funcional(numeros2));
 //# sourceMappingURL=paradigma_funcional_exercicio3.js.map
