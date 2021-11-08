@@ -1,8 +1,7 @@
-const informacoes_lista_numerica_funcional = (lista:Array<number>):Array<number> => {
+const informacoes_lista_numerica_funcional = (lista:Array<number>):Array<number>|string => {
 
     if(lista.filter((item) => {return isNaN(item)}).length > 0){
-        console.log("A lista passada não é inteiramente numérica")
-        return
+        return "A lista passada não é inteiramente numérica"
     }
 
     let maior_valor: number = lista.reduce((a,b) => {return Math.max(a,b)})
@@ -15,3 +14,4 @@ const informacoes_lista_numerica_funcional = (lista:Array<number>):Array<number>
 }
 
 let numeros2:Array<number> = [0,2,3,5,1,4,8,6,7,10,9]
+console.log(informacoes_lista_numerica_funcional(numeros2))

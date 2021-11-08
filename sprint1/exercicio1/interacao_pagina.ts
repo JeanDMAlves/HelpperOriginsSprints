@@ -1,5 +1,3 @@
-
-
 // Letra A
 let letra_A: HTMLInputElement = document.getElementById('formulario_A_saida') as HTMLInputElement
 let frase_A: HTMLInputElement = document.getElementById('frase_A') as HTMLInputElement
